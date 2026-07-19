@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="한국 고등학생을 위한 오늘의 작은 체크리스트." />
+    <meta name="theme-color" content="#d8ff5f" />
+    <!-- After deploying google-apps-script/Code.gs, paste its /exec URL below. -->
+    <meta name="checklist-endpoint" content="https://script.google.com/macros/s/AKfycbxBjoKIJ-pPdxlNE2tQATqr1vb2YonKuxuMZXIgtwUTaUmaY-1kKdTYJpynMlEcMbyMOA/exec" />
+    <title>오늘의 체크리스트 — Essay, Like Lim</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400&family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600&family=Noto+Sans+KR:wght@400;500;600&family=Noto+Serif+KR:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="checklist.css" />
+    <script src="script.js" defer></script>
+    <script src="checklist.js" defer></script>
+  </head>
+  <body class="checklist-page">
+    <header class="site-header checklist-header">
+      <a class="wordmark" href="index.html" aria-label="Essay, Like Lim — home">
+        <span>Essay,</span>
+        <span>Like Lim</span>
+      </a>
+      <a class="back-link" href="index.html">← 홈으로</a>
+    </header>
+
+    <main>
+      <section class="checklist-intro">
+        <div>
+          <p class="page-kicker">오늘을 위한 목록</p>
+          <h1>잊지 말아야<br /><em>할 것들.</em></h1>
+        </div>
+        <div class="progress-block" aria-live="polite">
+          <div class="progress-count"><strong data-completed>0</strong><span>/<span data-total>6</span> 완료</span></div>
+          <div class="progress-track" aria-hidden="true"><span data-progress></span></div>
+        </div>
+      </section>
+
+      <section class="checklist-panel" aria-labelledby="list-title">
+        <div class="list-heading">
+          <p>체크리스트</p>
+          <h2 id="list-title">오늘이 끝나기 전에</h2>
+          <button type="button" class="clear-button" data-clear>모두 지우기</button>
+        </div>
+
+        <form class="checklist-form" data-checklist method="post" target="mail-response">
+          <fieldset>
+            <legend class="sr-only">완료할 항목</legend>
+
+            <label class="check-item">
+              <input type="checkbox" name="item" value="Read today’s essay" />
+              <span class="custom-check" aria-hidden="true"></span>
+              <span class="item-number">01</span>
+              <span class="item-text">오늘의 에세이 읽기</span>
+            </label>
+
+            <label class="check-item">
+              <input type="checkbox" name="item" value="Write down one idea worth keeping" />
+              <span class="custom-check" aria-hidden="true"></span>
+              <span class="item-number">02</span>
+              <span class="item-text">기억하고 싶은 생각 하나 적기</span>
+            </label>
+
+            <label class="check-item">
+              <input type="checkbox" name="item" value="Take a short walk without your phone" />
+              <span class="custom-check" aria-hidden="true"></span>
+              <span class="item-number">03</span>
+              <span class="item-text">휴대폰 없이 잠깐 산책하기</span>
+            </label>
+
+            <label class="check-item">
+              <input type="checkbox" name="item" value="Notice something usually overlooked" />
+              <span class="custom-check" aria-hidden="true"></span>
+              <span class="item-number">04</span>
+              <span class="item-text">평소 지나쳤던 것 하나 발견하기</span>
+            </label>
+
+            <label class="check-item">
+              <input type="checkbox" name="item" value="Send a note to someone you miss" />
+              <span class="custom-check" aria-hidden="true"></span>
+              <span class="item-number">05</span>
+              <span class="item-text">보고 싶은 사람에게 안부 전하기</span>
+            </label>
+
+            <label class="check-item">
+              <input type="checkbox" name="item" value="Make room for tomorrow" />
+              <span class="custom-check" aria-hidden="true"></span>
+              <span class="item-number">06</span>
+              <span class="item-text">내일을 위한 여유 만들기</span>
+            </label>
+          </fieldset>
+
+          <div class="send-area">
+            <div>
+              <p class="send-label">목록을 보낼까요?</p>
+              <p class="send-note">체크한 항목만 정리해서 <strong>ye3031@gmail.com</strong>으로 보내요.</p>
+            </div>
+            <button type="submit" class="send-button">
+              <span data-send-label>보내기</span>
+              <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M11 24h26M27 14l10 10-10 10" /></svg>
+            </button>
+          </div>
+          <label class="form-trap" aria-hidden="true">
+            이 입력란은 비워 두세요
+            <input type="text" name="website" tabindex="-1" autocomplete="off" />
+          </label>
+          <p class="checklist-message" data-message role="status" aria-live="polite"></p>
+        </form>
+        <iframe class="mail-response" name="mail-response" title="이메일 전송 결과" data-mail-response></iframe>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-mark">E<span>/</span>LL</div>
+      <p>© <span data-year></span> Lim. 모든 글의 권리를 보유합니다.</p>
+      <div class="footer-links"><a href="#top">맨 위로 ↑</a></div>
+    </footer>
+  </body>
+</html>

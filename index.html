@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="안녕하세요0"
+    />
+    <meta name="theme-color" content="#f3efe6" />
+    <title>Essay, Like Lim</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400&family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600&family=Noto+Sans+KR:wght@400;500;600&family=Noto+Serif+KR:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="wordmark" href="#top" aria-label="Essay, Like Lim — home">
+        <span>Essay, Like Lim</span>
+      </a>
+
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">메뉴 열기</span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="주요 메뉴">
+        <a href="checklist.html">체크리스트</a>
+        <a href="lecture.html">기본 강의</a>
+        <a href="#about">about</a>
+        <a href="mailto:ye3031@gmail.com">contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-kicker reveal">안녕하세요1</div>
+        <h1 id="hero-title" class="reveal">
+          안녕하세요2<br />
+          <em>안녕하세요3</em>
+        </h1>
+        <div class="hero-bottom reveal">
+          <p>
+            안녕하세요4
+          </p>
+          <a class="round-link" href="#essays" aria-label="Explore the essays">
+            <svg viewBox="0 0 48 48" aria-hidden="true">
+              <path d="M24 9v28M14 27l10 10 10-10" />
+            </svg>
+          </a>
+        </div>
+      </section>
+
+      <section id="essays" class="essays-section" aria-labelledby="essays-title">
+        <div class="section-heading reveal">
+          <p>안녕하세요5</p>
+          <h2 id="essays-title">안녕하세요6</h2>
+          <span>01—03</span>
+        </div>
+
+        <div class="essay-list">
+          <article class="essay-card reveal">
+            <a href="essay.html">
+              <div class="essay-number">01</div>
+              <div class="essay-copy">
+                <p class="essay-meta"><time datetime="2026-07-02">2026년 7월 2일</time> · 6분</p>
+                <h3>안녕하세요7</h3>
+                <p class="essay-excerpt">
+                  안녕하세요8
+                </p>
+              </div>
+              <div class="essay-mark" aria-hidden="true">↗</div>
+            </a>
+          </article>
+
+          <article class="essay-card reveal">
+            <a href="essay.html">
+              <div class="essay-number">02</div>
+              <div class="essay-copy">
+                <p class="essay-meta"><time datetime="2026-05-18">2026년 5월 18일</time> · 4분</p>
+                <h3>안녕하세요9</h3>
+                <p class="essay-excerpt">
+                  안녕하세요10
+                </p>
+              </div>
+              <div class="essay-mark" aria-hidden="true">↗</div>
+            </a>
+          </article>
+
+          <article class="essay-card reveal">
+            <a href="essay.html">
+              <div class="essay-number">03</div>
+              <div class="essay-copy">
+                <p class="essay-meta"><time datetime="2026-03-09">2026년 3월 9일</time> · 8분</p>
+                <h3>안녕하세요11</h3>
+                <p class="essay-excerpt">
+                  안녕하세요12
+                </p>
+              </div>
+              <div class="essay-mark" aria-hidden="true">↗</div>
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <section id="about" class="about-section">
+        <p class="about-label reveal">안녕하세요13</p>
+        <div class="about-copy reveal">
+          <p>
+            안녕하세요14
+          </p>
+          <p class="about-aside">
+            천천히 쓰고.<br />가끔 발행하며.<br />늘 궁금해합니다.
+          </p>
+        </div>
+      </section>
+
+      <section class="newsletter" aria-labelledby="newsletter-title">
+        <div class="newsletter-copy reveal">
+          <p>가끔 도착하는 편지</p>
+          <h2 id="newsletter-title">다음 글이<br /><em>완성되면.</em></h2>
+        </div>
+        <form class="subscribe-form reveal" data-subscribe-form>
+          <label class="sr-only" for="email">이메일 주소</label>
+          <input id="email" name="email" type="email" placeholder="이메일 주소" required />
+          <button type="submit">구독하기 <span aria-hidden="true">→</span></button>
+          <p class="form-message" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-mark">ELL</div>
+      <p>© <span data-year></span> Lim. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#top">맨 위로 ↑</a>
+      </div>
+    </footer>
+  </body>
+</html>

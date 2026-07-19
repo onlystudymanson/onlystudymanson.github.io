@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Essay, Like Lim의 기본 강의 영상입니다." />
+    <meta name="theme-color" content="#191916" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <title>기본 강의 — Essay, Like Lim</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400&family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600&family=Noto+Sans+KR:wght@400;500;600&family=Noto+Serif+KR:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="lecture.css" />
+    <script src="script.js" defer></script>
+    <script src="lecture.js" defer></script>
+  </head>
+  <body class="lecture-page" id="top">
+    <header class="site-header lecture-header">
+      <a class="wordmark" href="index.html" aria-label="Essay, Like Lim 홈">
+        <span>Essay,</span><span>Like Lim</span>
+      </a>
+      <a class="back-link" href="index.html">← 홈으로</a>
+    </header>
+
+    <main>
+      <section class="lecture-intro" aria-labelledby="lecture-title">
+        <p class="lecture-kicker">Lecture 01</p>
+        <h1 id="lecture-title">기본 <em>강의</em></h1>
+        <p class="lecture-description">
+          영상을 재생하고 기본 내용을 차근차근 확인해 보세요.
+        </p>
+      </section>
+
+      <section class="video-section" aria-label="기본 강의 영상">
+        <div class="video-frame">
+          <iframe
+            data-youtube-player
+            data-video-id="OgT59eHFTDY"
+            title="기본 강의 YouTube 영상"
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+          <div class="local-video-notice" data-local-video-notice hidden>
+            <p>로컬 파일에서는 YouTube 영상을 재생할 수 없어요.</p>
+            <span>GitHub Pages 또는 로컬 웹 서버에서 이 페이지를 열어 주세요.</span>
+            <a
+              href="https://youtu.be/OgT59eHFTDY?si=vbuGp_Fa2drEqfkN"
+              target="_blank"
+              rel="noopener noreferrer"
+            >YouTube에서 보기 ↗</a>
+          </div>
+        </div>
+
+        <div class="video-footer">
+          <p>영상이 재생되지 않나요?</p>
+          <a
+            href="https://youtu.be/OgT59eHFTDY?si=vbuGp_Fa2drEqfkN"
+            target="_blank"
+            rel="noopener noreferrer"
+          >YouTube에서 보기 <span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-mark">E<span>/</span>LL</div>
+      <p>© <span data-year></span> Lim. 모든 글의 권리를 보유합니다.</p>
+      <div class="footer-links"><a href="#top">맨 위로 ↑</a></div>
+    </footer>
+  </body>
+</html>

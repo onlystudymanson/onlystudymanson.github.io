@@ -1,0 +1,365 @@
+.checklist-page {
+  background: var(--acid);
+}
+
+.checklist-header {
+  border-color: rgba(25, 25, 22, 0.26);
+}
+
+.back-link {
+  font-family: var(--mono);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.checklist-intro {
+  min-height: 610px;
+  padding: 65px clamp(22px, 4vw, 64px) 70px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: end;
+}
+
+.page-kicker,
+.list-heading > p,
+.send-label {
+  margin: 0;
+  font-family: var(--mono);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.page-kicker::before {
+  content: "✓";
+  margin-right: 9px;
+}
+
+.checklist-intro h1 {
+  margin: 65px 0 0;
+  font-family: var(--ko-serif);
+  font-size: clamp(86px, 12vw, 180px);
+  font-weight: 400;
+  line-height: 0.72;
+  letter-spacing: -0.055em;
+}
+
+.checklist-intro h1 em {
+  margin-left: 8vw;
+  font-weight: 400;
+}
+
+.progress-block {
+  max-width: 330px;
+  width: 100%;
+  justify-self: end;
+  padding-bottom: 5px;
+}
+
+.progress-count {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 14px;
+  font-family: var(--mono);
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+.progress-count strong {
+  font-family: var(--serif);
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.progress-track {
+  height: 2px;
+  overflow: hidden;
+  background: rgba(25, 25, 22, 0.25);
+}
+
+.progress-track span {
+  display: block;
+  width: 0;
+  height: 100%;
+  background: var(--ink);
+  transition: width 300ms ease;
+}
+
+.checklist-panel {
+  padding: 105px clamp(22px, 4vw, 64px) 130px;
+  background: var(--paper);
+}
+
+.list-heading {
+  display: grid;
+  grid-template-columns: 1fr 2fr auto;
+  align-items: end;
+  margin-bottom: 60px;
+}
+
+.list-heading h2 {
+  margin: 0;
+  font-family: var(--ko-serif);
+  font-size: clamp(48px, 6vw, 84px);
+  font-weight: 400;
+  line-height: 0.9;
+  letter-spacing: -0.04em;
+}
+
+.clear-button {
+  padding: 5px 0;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid currentColor;
+  font-family: var(--mono);
+  font-size: 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.checklist-form fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.check-item {
+  position: relative;
+  min-height: 112px;
+  display: grid;
+  grid-template-columns: 54px 1fr 4fr;
+  align-items: center;
+  border-top: 1px solid var(--line);
+  cursor: pointer;
+}
+
+.check-item:last-child {
+  border-bottom: 1px solid var(--line);
+}
+
+.check-item input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+.custom-check {
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--ink);
+  border-radius: 50%;
+  transition: background 180ms ease, transform 180ms ease;
+}
+
+.custom-check::after {
+  content: "✓";
+  opacity: 0;
+  font-size: 15px;
+  transform: scale(0.5);
+  transition: opacity 180ms ease, transform 180ms ease;
+}
+
+.check-item input:focus-visible + .custom-check {
+  outline: 3px solid var(--orange);
+  outline-offset: 4px;
+}
+
+.check-item input:checked + .custom-check {
+  background: var(--ink);
+  color: var(--acid);
+  transform: rotate(-8deg);
+}
+
+.check-item input:checked + .custom-check::after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.item-number {
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--muted);
+}
+
+.item-text {
+  position: relative;
+  width: fit-content;
+  font-family: var(--ko-serif);
+  font-size: clamp(28px, 3.2vw, 47px);
+  line-height: 1;
+  letter-spacing: -0.025em;
+}
+
+.item-text::after {
+  content: "";
+  position: absolute;
+  top: 52%;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: currentColor;
+  transition: width 280ms ease;
+}
+
+.check-item input:checked ~ .item-text {
+  color: var(--muted);
+}
+
+.check-item input:checked ~ .item-text::after {
+  width: 100%;
+}
+
+.send-area {
+  min-height: 260px;
+  margin-top: 80px;
+  padding: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 35px;
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.send-note {
+  max-width: 450px;
+  margin: 24px 0 0;
+  color: #aaa79e;
+  font-size: 13px;
+}
+
+.send-note strong {
+  color: var(--paper);
+  font-weight: 500;
+}
+
+.send-button {
+  width: 145px;
+  height: 145px;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+  background: var(--acid);
+  color: var(--ink);
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  font-family: var(--mono);
+  font-size: 11px;
+  text-transform: uppercase;
+  transition: transform 200ms ease, background 200ms ease;
+}
+
+.send-button:hover,
+.send-button:focus-visible {
+  background: var(--orange);
+  color: white;
+  transform: rotate(-7deg) scale(1.04);
+}
+
+.send-button:disabled {
+  cursor: wait;
+  opacity: 0.65;
+  transform: none;
+}
+
+.send-button svg {
+  width: 38px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.2;
+}
+
+.checklist-message {
+  min-height: 20px;
+  margin: 18px 0 0;
+  color: var(--orange);
+  font-family: var(--mono);
+  font-size: 11px;
+}
+
+.checklist-message[data-status="success"] {
+  color: #397200;
+}
+
+.checklist-message[data-status="error"] {
+  color: #b43218;
+}
+
+.form-trap,
+.mail-response {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (max-width: 760px) {
+  .checklist-intro {
+    min-height: 590px;
+    grid-template-columns: 1fr;
+    gap: 70px;
+  }
+
+  .checklist-intro h1 {
+    font-size: 23vw;
+  }
+
+  .checklist-intro h1 em {
+    margin-left: 0;
+  }
+
+  .progress-block {
+    justify-self: start;
+  }
+
+  .checklist-panel {
+    padding-top: 80px;
+    padding-bottom: 90px;
+  }
+
+  .list-heading {
+    grid-template-columns: 1fr auto;
+    gap: 26px;
+  }
+
+  .list-heading h2 {
+    grid-column: 1 / -1;
+    grid-row: 2;
+  }
+
+  .check-item {
+    min-height: 125px;
+    grid-template-columns: 47px 35px 1fr;
+  }
+
+  .item-text {
+    font-size: 30px;
+  }
+
+  .send-area {
+    min-height: 420px;
+    margin-top: 65px;
+    padding: 32px 25px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .send-button {
+    width: 125px;
+    height: 125px;
+    align-self: flex-end;
+  }
+}
