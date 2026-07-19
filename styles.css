@@ -52,6 +52,7 @@ input {
 }
 
 .site-header {
+  position: relative;
   min-height: 126px;
   padding: 24px clamp(22px, 4vw, 64px);
   display: flex;
@@ -75,12 +76,17 @@ input {
 }
 
 .site-nav {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   gap: 42px;
   font-family: var(--mono);
-  font-size: 12px;
+  font-size: 15px;
+  font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.04em;
+  white-space: nowrap;
 }
 
 .site-nav a {
