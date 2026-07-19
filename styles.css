@@ -56,7 +56,7 @@ input {
   min-height: 126px;
   padding: 24px clamp(22px, 4vw, 64px);
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid var(--line);
 }
@@ -65,24 +65,29 @@ input {
   display: flex;
   flex-direction: column;
   font-family: var(--serif);
-  font-size: 27px;
+  font-size: 36px;
   line-height: 0.85;
-  letter-spacing: -0.03em;
+  letter-spacing: 0.01em;
 }
 
 .wordmark span:last-child {
-  font-style: italic;
+  /* font-style: italic; */
+  font-style: normal;
   margin-left: 13px;
 }
 
 .site-nav {
   position: absolute;
+  /* left: 50%;
+  transform: translateX(-50%); */
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
   display: flex;
   gap: 42px;
-  font-family: var(--mono);
-  font-size: 15px;
+  /* font-family: var(--mono); */
+  font-family: var(--sans);
+  font-size: 20px;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.04em;
@@ -155,10 +160,10 @@ input {
   align-self: center;
   margin: 20px 0 56px;
   font-family: var(--ko-serif);
-  font-size: clamp(67px, 11.4vw, 175px);
+  font-size: clamp(67px, 11.4vw, 150px);
   font-weight: 400;
-  line-height: 0.78;
-  letter-spacing: -0.055em;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
 }
 
 .hero h1 em {
