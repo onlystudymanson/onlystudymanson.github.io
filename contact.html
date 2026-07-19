@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Essay, Like Lim 연락처와 찾아오시는 길입니다." />
+    <meta name="theme-color" content="#e85d2a" />
+    <title>Contact — Essay, Like Lim</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400&family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600&family=Noto+Sans+KR:wght@400;500;600&family=Noto+Serif+KR:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="contact.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body class="contact-page" id="top">
+    <header class="site-header contact-header">
+      <a class="wordmark" href="index.html" aria-label="Essay, Like Lim 홈">
+        <span>Essay,</span><span>Like Lim</span>
+      </a>
+      <a class="back-link" href="index.html">← 홈으로</a>
+    </header>
+
+    <main>
+      <section class="contact-intro" aria-labelledby="contact-title">
+        <p class="contact-kicker">Get in touch</p>
+        <h1 id="contact-title">Let’s<br /><em>connect.</em></h1>
+        <p class="contact-description">
+          궁금한 점이나 전하고 싶은 이야기가 있다면 편하게 연락해 주세요.
+        </p>
+      </section>
+
+      <section class="contact-details" aria-label="연락처 정보">
+        <a class="contact-row" href="tel:+821012345678">
+          <span class="contact-label">Telephone</span>
+          <strong>+82 10-1234-5678</strong>
+          <span class="contact-arrow" aria-hidden="true">↗</span>
+        </a>
+
+        <a class="contact-row" href="mailto:onlystudymanson@gmail.com">
+          <span class="contact-label">Email</span>
+          <strong>onlystudymanson@gmail.com</strong>
+          <span class="contact-arrow" aria-hidden="true">↗</span>
+        </a>
+
+        <div class="contact-row address-row">
+          <span class="contact-label">Address</span>
+          <strong>서울특별시 서대문구 연세로 50</strong>
+          <span class="contact-arrow" aria-hidden="true">↓</span>
+        </div>
+      </section>
+
+      <section class="map-section" aria-labelledby="map-title">
+        <div class="map-heading">
+          <div>
+            <p>Location</p>
+            <h2 id="map-title">찾아오시는 길</h2>
+          </div>
+          <a
+            href="https://www.google.com/maps/search/?api=1&amp;query=%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C%20%EC%84%9C%EB%8C%80%EB%AC%B8%EA%B5%AC%20%EC%97%B0%EC%84%B8%EB%A1%9C%2050"
+            target="_blank"
+            rel="noopener noreferrer"
+          >Google Maps에서 보기 <span aria-hidden="true">↗</span></a>
+        </div>
+
+        <div class="map-frame">
+          <iframe
+            src="https://www.google.com/maps?q=%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C%20%EC%84%9C%EB%8C%80%EB%AC%B8%EA%B5%AC%20%EC%97%B0%EC%84%B8%EB%A1%9C%2050&amp;output=embed"
+            title="서울특별시 서대문구 연세로 50 지도"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-mark">E<span>/</span>LL</div>
+      <p>© <span data-year></span> Lim. 모든 글의 권리를 보유합니다.</p>
+      <div class="footer-links"><a href="#top">맨 위로 ↑</a></div>
+    </footer>
+  </body>
+</html>
