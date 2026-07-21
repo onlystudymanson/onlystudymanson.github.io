@@ -60,7 +60,7 @@
 .drop-cap::first-letter {
   float: left;
   margin: 7px 11px 0 0;
-  color: var(--orange);
+  color: var(--accent-dark);
   font-size: 4.2em;
   line-height: 0.7;
 }

@@ -35,7 +35,7 @@
 .contact-kicker::before {
   content: "✳";
   margin-right: 9px;
-  color: var(--orange);
+  color: var(--accent-dark);
 }
 
 .contact-intro h1 {
@@ -52,7 +52,7 @@
 .contact-intro h1 em {
   display: inline-block;
   margin-left: 20vw;
-  color: var(--orange);
+  color: var(--accent-dark);
   font-weight: 400;
 }
 
@@ -97,7 +97,7 @@
 
 a.contact-row:hover strong,
 a.contact-row:focus-visible strong {
-  color: var(--orange);
+  color: var(--accent-dark);
 }
 
 a.contact-row:hover .contact-arrow,
@@ -152,7 +152,7 @@ a.contact-row:focus-visible .contact-arrow {
   min-height: 420px;
   height: min(65vw, 680px);
   overflow: hidden;
-  background: #292925;
+  background: #292929;
 }
 
 .map-frame iframe {
@@ -167,7 +167,7 @@ a.contact-row:focus-visible .contact-arrow {
 
 .map-frame:hover iframe,
 .map-frame:focus-within iframe {
-  filter: grayscale(0) contrast(1);
+  filter: grayscale(1) contrast(1);
 }
 
 @media (max-width: 760px) {

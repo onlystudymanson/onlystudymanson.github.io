@@ -1,9 +1,9 @@
 .checklist-page {
-  background: var(--acid);
+  background: var(--accent-light);
 }
 
 .checklist-header {
-  border-color: rgba(25, 25, 22, 0.26);
+  border-color: rgba(23, 23, 23, 0.26);
 }
 
 .back-link {
@@ -77,7 +77,7 @@
 .progress-track {
   height: 2px;
   overflow: hidden;
-  background: rgba(25, 25, 22, 0.25);
+  background: rgba(23, 23, 23, 0.25);
 }
 
 .progress-track span {
@@ -166,13 +166,13 @@
 }
 
 .check-item input:focus-visible + .custom-check {
-  outline: 3px solid var(--orange);
+  outline: 3px solid var(--accent-dark);
   outline-offset: 4px;
 }
 
 .check-item input:checked + .custom-check {
   background: var(--ink);
-  color: var(--acid);
+  color: var(--on-dark);
   transform: rotate(-8deg);
 }
 
@@ -230,7 +230,7 @@
 .send-note {
   max-width: 450px;
   margin: 24px 0 0;
-  color: #aaa79e;
+  color: var(--dark-muted);
   font-size: 13px;
 }
 
@@ -248,7 +248,7 @@
   align-items: center;
   justify-content: center;
   gap: 13px;
-  background: var(--acid);
+  background: var(--accent-light);
   color: var(--ink);
   border: 0;
   border-radius: 50%;
@@ -261,8 +261,8 @@
 
 .send-button:hover,
 .send-button:focus-visible {
-  background: var(--orange);
-  color: white;
+  background: var(--accent-dark);
+  color: var(--on-dark);
   transform: rotate(-7deg) scale(1.04);
 }
 
@@ -282,17 +282,17 @@
 .checklist-message {
   min-height: 20px;
   margin: 18px 0 0;
-  color: var(--orange);
+  color: var(--accent-dark);
   font-family: var(--mono);
   font-size: 11px;
 }
 
 .checklist-message[data-status="success"] {
-  color: #397200;
+  color: #3d3d3d;
 }
 
 .checklist-message[data-status="error"] {
-  color: #b43218;
+  color: #262626;
 }
 
 .form-trap,
