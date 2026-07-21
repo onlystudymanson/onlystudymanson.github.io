@@ -506,7 +506,7 @@ input {
     gap: 25px;
     background: var(--accent-light);
     color: var(--ink);
-    font-family: var(--serif);
+    font-family: var(--sans);
     font-size: 52px;
     text-transform: none;
     transform: translateY(-100%);
@@ -522,8 +522,8 @@ input {
   }
 
   .hero h1 {
-    font-size: clamp(50px, 21vw, 80px);
-    line-height: 0.83;
+    font-size: clamp(40px, 21vw, 60px);
+    line-height: 1.2;
   }
 
   .hero h1 em {
