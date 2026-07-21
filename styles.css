@@ -522,7 +522,7 @@ input {
   }
 
   .hero h1 {
-    font-size: clamp(50px, 21vw, 90px);
+    font-size: clamp(50px, 21vw, 80px);
     line-height: 0.83;
   }
 
