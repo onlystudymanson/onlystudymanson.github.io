@@ -146,8 +146,7 @@ input {
 
 .hero-kicker,
 .section-heading > p,
-.newsletter-copy > p,
-.about-label {
+.newsletter-copy > p {
   font-family: var(--mono);
   font-size: 11px;
   text-transform: uppercase;
@@ -316,11 +315,8 @@ input {
   border-bottom: 1px solid var(--line);
 }
 
-.about-label {
-  margin: 12px 0 0;
-}
-
 .about-profile {
+  grid-column: 2;
   display: block;
   width: 100%;
   max-width: 420px;
@@ -329,11 +325,16 @@ input {
   /* filter: grayscale(1); */
 }
 
-.about-copy > p:first-child {
+.about-copy {
+  grid-column: 3;
+}
+
+.about-copy h2 {
   max-width: 900px;
   margin: 0;
   font-family: var(--ko-serif);
   font-size: clamp(1px, 5.4vw, 30px);
+  font-weight: 400;
   line-height: 1.02;
   letter-spacing: -0.035em;
 }
@@ -345,6 +346,30 @@ input {
   line-height: 1.7;
   text-transform: uppercase;
   letter-spacing: 0.04em;
+}
+
+.about-aside h3 {
+  margin: 0 0 10px;
+  font-family: var(--sans);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+}
+
+.about-aside ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Adds space before headings that follow a list */
+.about-aside ul + h3 {
+  margin-top: 24px;
+}
+
+
+.about-aside li + li {
+  margin-top: 2px;
 }
 
 .newsletter {
@@ -592,10 +617,15 @@ input {
   }
 
   .about-profile {
+    grid-column: 1;
     width: min(100%, 360px);
   }
 
-  .about-copy > p:first-child {
+  .about-copy {
+    grid-column: 1;
+  }
+
+  .about-copy h2 {
     font-size: 44px;
   }
 
