@@ -102,7 +102,7 @@
 
 .list-heading h2 {
   margin: 0;
-  font-family: var(--ko-serif);
+  font-family: var(--sans);
   font-size: clamp(48px, 6vw, 84px);
   font-weight: 400;
   line-height: 0.9;
@@ -190,7 +190,7 @@
 .item-text {
   position: relative;
   width: fit-content;
-  font-family: var(--ko-serif);
+  font-family: var(--sans);
   font-size: clamp(28px, 3.2vw, 47px);
   line-height: 1;
   letter-spacing: -0.025em;
