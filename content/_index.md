@@ -1,6 +1,6 @@
 ---
 title: ''
-summary: 'The portfolio of onlystudymanson.'
+summary: 'The portfolio of Seung-Jae Son.'
 type: landing
 sections:
   - block: resume-biography-3

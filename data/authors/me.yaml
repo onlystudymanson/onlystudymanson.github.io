@@ -2,7 +2,7 @@ schema: hugoblox/author/v1
 slug: me
 is_owner: true
 name:
-  display: onlystudymanson
+  display: Seung-Jae Son
 role: Portfolio
 bio: |
   Welcome to my portfolio. I’ll share selected projects and publications here.
