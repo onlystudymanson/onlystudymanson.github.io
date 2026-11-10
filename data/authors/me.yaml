@@ -5,7 +5,7 @@ name:
   display: Seung-Jae Son
 role: Portfolio
 bio: |
-  Welcome to my portfolio. I’ll share selected projects and publications here.
+  I’m a Ph.D. candidate at Yonsei University, where my research focuses on 3D metrology. One of my projects explores how to calibrate structured light systems for accurate 3D measurements.
 links:
   - icon: brands/github
     url: https://github.com/onlystudymanson
