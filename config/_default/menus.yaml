@@ -1,0 +1,4 @@
+main:
+  - name: About
+    url: /
+    weight: 10

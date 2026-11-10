@@ -1,0 +1,12 @@
+schema: hugoblox/author/v1
+slug: me
+is_owner: true
+name:
+  display: onlystudymanson
+role: Portfolio
+bio: |
+  Welcome to my portfolio. I’ll share selected projects and publications here.
+links:
+  - icon: brands/github
+    url: https://github.com/onlystudymanson
+    label: GitHub
