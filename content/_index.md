@@ -14,4 +14,26 @@ sections:
           enable: true
       name:
         size: md
+  - block: content-collection
+    id: projects
+    content:
+      title: Projects
+      filters:
+        folders:
+          - projects
+    design:
+      view: card
+      columns: 1
+      show_date: false
+      show_read_time: false
+  - block: content-collection
+    id: publications
+    content:
+      title: Publications
+      text: Publication details coming soon.
+      filters:
+        folders:
+          - publications
+    design:
+      view: citation
 ---
