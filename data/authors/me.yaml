@@ -7,7 +7,10 @@ role: Portfolio
 bio: |
   I’m a Ph.D. candidate in the Department of Mechanical Engineering at Yonsei University, advised by Professor Jae-Sang Hyun. My research focuses on 3D metrology, including structured light system calibration.
 
-  I received my bachelor’s degree from Yonsei University in 2022 and am currently pursuing a Ph.D. in mechanical engineering there.
+  ### Education
+
+  - Ph.D. in Mechanical Engineering, Yonsei University (in progress)
+  - Bachelor’s degree, Yonsei University (2022)
 links:
   - icon: brands/github
     url: https://github.com/onlystudymanson
