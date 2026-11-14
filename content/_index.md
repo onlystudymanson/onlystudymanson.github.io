@@ -18,12 +18,14 @@ sections:
     id: projects
     content:
       title: Projects
+      sort_by: Weight
+      sort_ascending: true
       filters:
         folders:
           - projects
     design:
-      view: card
-      columns: 1
+      view: article-grid
+      columns: 2
       show_date: false
       show_read_time: false
   - block: content-collection
