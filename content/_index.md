@@ -32,7 +32,6 @@ sections:
     id: publications
     content:
       title: Publications
-      text: '[Google Scholar profile ↗](https://scholar.google.com.tw/citations?user=_yA-GggAAAAJ&hl=en)'
       filters:
         folders:
           - publications
