@@ -10,3 +10,6 @@ links:
   - icon: brands/github
     url: https://github.com/onlystudymanson
     label: GitHub
+  - icon: academicons/google-scholar
+    url: https://scholar.google.com.tw/citations?user=_yA-GggAAAAJ&hl=en
+    label: Google Scholar
