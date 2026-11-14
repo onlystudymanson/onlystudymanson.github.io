@@ -1,7 +1,7 @@
 ---
-title: Point Cloud Registration (Sample)
-summary: Align scans from multiple viewpoints to build a single 3D model.
+title: FPP with a miniaturized DOE laser projector
+summary: Using a compact DOE laser projector for fringe projection profilometry.
 weight: 2
 ---
 
-This example explores how to align overlapping point clouds from several scans of the same object. It would compare alignment methods on a reference object and examine how scan overlap affects registration error.
+This project explores fringe projection profilometry with a miniaturized DOE laser projector.

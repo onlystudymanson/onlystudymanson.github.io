@@ -1,7 +1,7 @@
 ---
-title: Surface Deviation Mapping (Sample)
-summary: Compare a scanned surface with its CAD model to locate dimensional deviations.
+title: Single-shot speckle-based 3D reconstruction
+summary: Reconstructing 3D shape from a single image of a speckle pattern.
 weight: 3
 ---
 
-This example uses a color map to show where a scanned part differs from its nominal CAD surface. It would compare the measured deviations with the part’s tolerances to identify areas that need closer inspection.
+This project explores how a speckle pattern captured in a single image can be used to reconstruct 3D shape.

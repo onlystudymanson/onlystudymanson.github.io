@@ -1,7 +1,7 @@
 ---
-title: Structured Light System Calibration
-summary: Calibrating structured light systems for accurate 3D measurements.
+title: Fringe projection profilometry (FPP) with plastic slits
+summary: Using plastic slits in a fringe projection profilometry system.
 weight: 1
 ---
 
-I study structured light system calibration as part of my research in 3D metrology. The project focuses on how calibration affects the accuracy of the resulting 3D measurements.
+This project explores the use of plastic slits in fringe projection profilometry for 3D measurement.
