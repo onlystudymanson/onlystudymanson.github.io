@@ -29,13 +29,6 @@ sections:
       columns: 2
       show_date: false
       show_read_time: false
-  - block: content-collection
+  - block: publication-groups
     id: publications
-    content:
-      title: Publications
-      filters:
-        folders:
-          - publications
-    design:
-      view: citation
 ---

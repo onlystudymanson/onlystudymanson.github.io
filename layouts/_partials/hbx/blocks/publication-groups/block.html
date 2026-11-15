@@ -1,0 +1,35 @@
+{{ $page := .wcPage }}
+{{ $publications := (site.GetPage "/publications").RegularPages.ByDate.Reverse }}
+{{ $groups := slice
+  (dict "title" "Journals" "type" "article-journal")
+  (dict "title" "Proceedings" "type" "paper-conference")
+  (dict "title" "Preprints" "type" "article")
+}}
+
+<div class="container mx-auto max-w-3xl px-6">
+  {{ $titleClass := "mb-10 text-center text-3xl font-bold" }}
+  {{ if $page.IsHome }}
+    <h2 class="{{ $titleClass }}">Publications</h2>
+  {{ else }}
+    <h1 class="{{ $titleClass }}">{{ $page.Title }}</h1>
+  {{ end }}
+
+  <div class="space-y-8">
+    {{ range $groups }}
+      {{ $title := .title }}
+      {{ with where $publications "Params.publication_types" "intersect" (slice .type) }}
+        <section id="{{ $title | urlize }}">
+          {{ $headingClass := "mb-4 text-xl font-semibold" }}
+          {{ if $page.IsHome }}
+            <h3 class="{{ $headingClass }}">{{ $title }}</h3>
+          {{ else }}
+            <h2 class="{{ $headingClass }}">{{ $title }}</h2>
+          {{ end }}
+          {{ range . }}
+            {{ partial "views/citation.html" (dict "item" .) }}
+          {{ end }}
+        </section>
+      {{ end }}
+    {{ end }}
+  </div>
+</div>
