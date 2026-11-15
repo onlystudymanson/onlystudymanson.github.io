@@ -18,6 +18,7 @@ sections:
     id: projects
     content:
       title: Projects
+      count: 0
       sort_by: Weight
       sort_ascending: true
       filters:

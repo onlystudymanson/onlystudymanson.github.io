@@ -11,6 +11,7 @@ sections:
   - block: collection
     content:
       title: Selected Projects
+      count: 0
       sort_by: Weight
       sort_ascending: true
       filters:
