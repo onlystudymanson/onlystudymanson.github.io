@@ -12,13 +12,10 @@
     {{ $profile := partial "functions/get_author_profile" . }}
     {{ if $profile.has_data }}
       {{ if and (eq $page.Section "projects") $profile.is_owner }}
-        {{ $bio := printf "Research focused on 3D metrology\n\n[More about me →](%s)" site.Home.RelPermalink }}
-        {{ $profile = merge $profile (dict
-          "role" "Ph.D. candidate in Mechanical Engineering, Yonsei University"
-          "bio" $bio
-        ) }}
+        {{ partial "project_author_card.html" $profile }}
+      {{ else }}
+        {{ partial "page_author_card" (dict "profile" $profile "page" $page) }}
       {{ end }}
-      {{ partial "page_author_card" (dict "profile" $profile "page" $page) }}
     {{ end }}
   {{ end }}
 {{ end }}

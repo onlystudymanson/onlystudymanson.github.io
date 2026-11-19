@@ -5,6 +5,7 @@ type: landing
 cascade:
   params:
     pager: false
+    share: false
 
 # Page sections
 sections:
