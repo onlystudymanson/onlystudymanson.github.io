@@ -13,6 +13,7 @@ sections:
           url: /files/Seung_Jae_Son_CV.pdf
           download: true
     design:
+      css_style: 'padding-top: 0;'
       background:
         gradient_mesh:
           enable: true

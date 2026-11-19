@@ -82,7 +82,7 @@
   {{ end }}
 {{ end }}
 
-<div class="resume-biography py-8 px-4 sm:py-12 md:py-16 lg:py-24 xl:py-32 relative overflow-hidden">
+<div class="resume-biography py-8 px-4 sm:pt-10 sm:pb-12 md:pt-12 md:pb-16 lg:pb-24 xl:pb-32 relative overflow-hidden">
   {{/* Add subtle top gradient for navbar transition */}}
   <div class="max-w-7xl mx-auto">
     <div class="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 items-start">
@@ -180,14 +180,14 @@
         {{ end }}
 
         {{ if $avatar }}
-        <div class="avatar-wrapper {{ if $img }}-mt-24{{else}}mb-4{{end}}" style="width: {{$display_size}}px; height: {{$display_size}}px;">
+        <div class="avatar-wrapper {{ if $img }}-mt-24{{else}}mb-4{{end}}" style="width: 100%; max-width: {{$display_size}}px; aspect-ratio: 1;">
           {{ $avatar_image := $avatar.Fill (printf "%sx%s Center" $generation_size $generation_size) }}
           <img class="avatar {{$shape_class}} border-4 border-white shadow-2xl"
                src="{{ $avatar_image.RelPermalink }}"
                alt="{{$profile.title}}"
                width="{{$display_size}}"
                height="{{$display_size}}"
-               style="width: {{$display_size}}px; height: {{$display_size}}px; object-fit: cover;">
+               style="width: 100%; height: 100%; object-fit: cover;">
           {{ with $status_icon }}<span class="avatar-emoji">{{ . | emojify }}</span>{{ end }}
         </div>
         {{ end }}
