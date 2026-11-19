@@ -6,6 +6,7 @@ cascade:
   params:
     pager: false
     share: false
+    reading_time: false
 
 # Page sections
 sections:
