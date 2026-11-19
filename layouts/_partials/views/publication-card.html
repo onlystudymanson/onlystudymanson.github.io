@@ -4,7 +4,7 @@
 
 <article class="publication-card rounded-xl border border-neutral-200 bg-white p-5 shadow-sm dark:border-neutral-700 dark:bg-neutral-900">
   {{ if .page.IsHome }}<h4 class="{{ $titleClass }}">{{ else }}<h3 class="{{ $titleClass }}">{{ end }}
-    <a href="{{ $item.Params.paper_url | default $item.RelPermalink }}" class="hover:text-primary-700 hover:underline dark:hover:text-primary-400">{{ $item.Title }}</a>
+    <a href="{{ $item.Params.paper_url | default $item.RelPermalink }}" target="_blank" rel="noopener" class="hover:text-primary-700 hover:underline dark:hover:text-primary-400">{{ $item.Title }}</a>
   {{ if .page.IsHome }}</h4>{{ else }}</h3>{{ end }}
 
   <p class="mt-2 text-[0.9375rem] leading-relaxed text-neutral-600 dark:text-neutral-300">
