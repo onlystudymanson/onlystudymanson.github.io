@@ -5,6 +5,7 @@ authors:
   - Jae-Sang Hyun
 date: 2023-06-16
 publication_types: ["paper-conference"]
+paper_url: https://doi.org/10.1117/12.2664656
 publication:
   name: Dimensional Optical Metrology and Inspection for Practical Applications XII
   short_name: Proceedings of SPIE

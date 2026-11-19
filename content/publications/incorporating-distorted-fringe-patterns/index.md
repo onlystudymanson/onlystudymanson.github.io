@@ -7,6 +7,7 @@ authors:
   - Jae-Sang Hyun
 date: 2025-03-19
 publication_types: ["paper-conference"]
+paper_url: https://doi.org/10.1117/12.3049454
 publication:
   name: Emerging Digital Micromirror Device Based Systems and Applications XVII
   short_name: Proceedings of SPIE

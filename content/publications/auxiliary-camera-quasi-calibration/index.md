@@ -7,6 +7,7 @@ authors:
 date: 2024-12-01
 show_date: false
 publication_types: ["article-journal"]
+paper_url: https://doi.org/10.1016/j.optlastec.2024.111369
 publication:
   name: Optics & Laser Technology
   volume: 179

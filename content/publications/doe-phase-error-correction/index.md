@@ -10,6 +10,7 @@ publishDate: 2026-11-17T21:31:29Z
 lastmod: 2026-11-17T21:31:29Z
 show_date: false
 publication_types: ["article-journal"]
+paper_url: https://doi.org/10.1016/j.optlastec.2026.117012
 publication:
   name: Optics & Laser Technology
   volume: 205

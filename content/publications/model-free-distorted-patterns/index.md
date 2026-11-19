@@ -6,6 +6,7 @@ authors:
   - Jae-Sang Hyun
 date: 2025-04-21
 publication_types: ["article-journal"]
+paper_url: https://doi.org/10.1364/OE.561136
 publication:
   name: Optics Express
   volume: 33
