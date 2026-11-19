@@ -11,6 +11,10 @@
   {{ range $authors }}
     {{ $profile := partial "functions/get_author_profile" . }}
     {{ if $profile.has_data }}
+      {{ $authorData := index (partialCached "functions/get_authors_data" $page site.Language.Lang) $profile.slug }}
+      {{ with $authorData.card_links }}
+        {{ $profile = merge $profile (dict "links" .) }}
+      {{ end }}
       {{ if and (eq $page.Section "projects") $profile.is_owner }}
         {{ partial "project_author_card.html" $profile }}
       {{ else }}

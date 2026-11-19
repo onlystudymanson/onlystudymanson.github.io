@@ -16,6 +16,13 @@ bio: |
 
   - Visiting Researcher, Carnegie Mellon University (August 2024 – February 2025)
 links:
+  - icon: brands/linkedin
+    url: https://www.linkedin.com/in/seung-jae-son-9bb364291/
+    label: LinkedIn
+  - icon: custom/google-scholar-cap
+    url: https://scholar.google.com.tw/citations?user=_yA-GggAAAAJ&hl=en
+    label: Google Scholar
+card_links:
   - icon: brands/github
     url: https://github.com/onlystudymanson
     label: GitHub
