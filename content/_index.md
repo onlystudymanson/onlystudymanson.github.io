@@ -37,4 +37,14 @@ sections:
       show_read_time: false
   - block: publication-groups
     id: publications
+  - block: research-grants-awards
+    id: research-grants-awards
+    content:
+      title: Research Grants & Awards
+      items:
+        - title: Ph.D. Student Research Grant
+          role: Principal Investigator
+          organization: National Research Foundation of Korea
+          dates: September 2025 – August 2027
+          description: KRW 50,000,000 in funding for doctoral research over two years.
 ---

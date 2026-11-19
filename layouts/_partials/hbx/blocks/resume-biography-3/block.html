@@ -192,8 +192,8 @@
         </div>
         {{ end }}
 
-        {{/* Name and Role - Centered */}}
-        <div class="space-y-3">
+        {{/* Name and profile actions */}}
+        <div class="space-y-4">
           {{/* Extract pronunciation for ruby annotation */}}
           {{ $name_pronunciation := "" }}
           {{ with $profile.name_pronunciation }}
@@ -268,18 +268,17 @@
               </p>
             {{ end }}
           {{ end }}
-        </div>
-
-        {{ with $content.profile_buttons }}
-        <div class="flex flex-wrap justify-center gap-3">
-          {{ range $index, $button := . }}
-          <a href="{{ $button.url | safeURL }}" {{ if $button.download }}download{{ end }}
-             class="inline-flex items-center justify-center whitespace-nowrap rounded-lg border px-4 py-2.5 text-sm font-semibold transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600 {{ if eq $index 0 }}border-primary-700 bg-primary-700 text-white hover:border-primary-800 hover:bg-primary-800 dark:border-primary-500 dark:bg-primary-500 dark:hover:bg-primary-600{{ else }}border-gray-300 bg-white text-gray-800 hover:border-primary-500 hover:text-primary-700 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-100 dark:hover:border-primary-400{{ end }}">
-            {{ $button.text }}
-          </a>
+          {{ with $content.profile_buttons }}
+          <div class="flex flex-wrap justify-center gap-3">
+            {{ range $index, $button := . }}
+            <a href="{{ $button.url | safeURL }}" {{ if $button.download }}download{{ end }}
+               class="inline-flex items-center justify-center whitespace-nowrap rounded-lg border px-4 py-2.5 text-sm font-semibold transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600 {{ if eq $index 0 }}border-primary-700 bg-primary-700 text-white hover:border-primary-800 hover:bg-primary-800 dark:border-primary-500 dark:bg-primary-500 dark:hover:bg-primary-600{{ else }}border-gray-300 bg-white text-gray-800 hover:border-primary-500 hover:text-primary-700 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-100 dark:hover:border-primary-400{{ end }}">
+              {{ $button.text }}
+            </a>
+            {{ end }}
+          </div>
           {{ end }}
         </div>
-        {{ end }}
 
         {{/* Social Icons */}}
         {{ $links_raw := $profile.links }}
