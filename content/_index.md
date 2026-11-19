@@ -12,8 +12,6 @@ sections:
         - text: Download CV
           url: /files/Seung_Jae_Son_CV.pdf
           download: true
-      headings:
-        about: About
     design:
       background:
         gradient_mesh:
@@ -40,7 +38,7 @@ sections:
   - block: research-grants-awards
     id: research-grants-awards
     content:
-      title: Research Grants & Awards
+      title: Research Grants
       items:
         - title: Ph.D. Student Research Grant
           role: Principal Investigator

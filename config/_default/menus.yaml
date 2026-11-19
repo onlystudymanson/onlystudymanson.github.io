@@ -8,6 +8,6 @@ main:
   - name: Publications
     url: /#publications
     weight: 30
-  - name: Grants & Awards
+  - name: Research Grants
     url: /#research-grants-awards
     weight: 40
