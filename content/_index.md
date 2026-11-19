@@ -6,6 +6,12 @@ sections:
   - block: resume-biography-3
     content:
       username: me
+      profile_buttons:
+        - text: View Publications
+          url: '#publications'
+        - text: Download CV
+          url: /files/Seung_Jae_Son_CV.pdf
+          download: true
       headings:
         about: About
     design:
