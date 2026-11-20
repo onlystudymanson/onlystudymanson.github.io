@@ -7,15 +7,15 @@
     <a href="{{ $item.Params.paper_url | default $item.RelPermalink }}" target="_blank" rel="noopener" class="hover:text-primary-700 hover:underline dark:hover:text-primary-400">{{ $item.Title }}</a>
   {{ if .page.IsHome }}</h4>{{ else }}</h3>{{ end }}
 
-  <p class="mt-2 text-[0.9375rem] leading-relaxed text-neutral-600 dark:text-neutral-300">
+  <p class="mt-2 text-[0.9375rem] leading-relaxed text-black dark:text-neutral-100">
     {{- range $index, $author := $item.Params.authors -}}
       {{- if $index }}, {{ end -}}
       {{- $profile := partial "functions/get_author_profile" $author -}}
       {{- if $profile.is_owner -}}
-        <strong class="font-semibold text-neutral-900 dark:text-neutral-100">{{ $profile.title }}</strong>
+        <strong class="font-semibold text-primary-700 dark:text-primary-400">{{ $profile.title }}</strong>
       {{- else -}}
         {{- with index hugo.Data.publication_author_links $author -}}
-          <a href="{{ . }}" target="_blank" rel="noopener" class="text-primary-700 hover:underline dark:text-primary-400">{{ $profile.title }}</a>
+          <a href="{{ . }}" target="_blank" rel="noopener" class="text-black hover:underline dark:text-neutral-100">{{ $profile.title }}</a>
         {{- else -}}
           {{- $profile.title -}}
         {{- end -}}
