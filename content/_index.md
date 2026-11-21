@@ -45,5 +45,5 @@ sections:
           role: Principal Investigator
           organization: National Research Foundation of Korea
           dates: September 2025 – August 2027
-          description: KRW 50,000,000 in funding for doctoral research over two years.
+          description: KRW 50,000,000 (approx. USD 37,000) in funding for doctoral research over two years.
 ---
