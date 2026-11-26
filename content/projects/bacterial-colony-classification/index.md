@@ -1,6 +1,9 @@
 ---
 title: Bacterial colony classification
 weight: 6
+image:
+  filename: thumbnail-colony.jpg
+  preview_only: true
 ---
 
 This project explores methods for classifying bacterial colonies.
