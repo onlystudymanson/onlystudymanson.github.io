@@ -13,7 +13,7 @@ sections:
           url: /files/Seung_Jae_Son_CV.pdf
           download: true
     design:
-      css_style: 'padding-top: 0;'
+      css_style: 'padding-top: 0; padding-bottom: 0;'
       background:
         gradient_mesh:
           enable: true
@@ -30,6 +30,7 @@ sections:
         folders:
           - projects
     design:
+      css_style: 'padding-top: clamp(1.5rem, 3.75vw, 3rem);'
       view: article-grid
       columns: 2
       show_date: false
