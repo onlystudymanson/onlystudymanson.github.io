@@ -1,0 +1,6 @@
+/* Keep the description and collaborator credit visible on this project's cards. */
+[role="article"]:has(h3 a[href$="/projects/surface-deviation-mapping/"]) .line-clamp-3 {
+  display: block;
+  overflow: visible;
+  -webkit-line-clamp: unset;
+}

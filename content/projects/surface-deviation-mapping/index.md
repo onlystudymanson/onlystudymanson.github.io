@@ -1,6 +1,6 @@
 ---
 title: Single-shot speckle-based 3D reconstruction
-summary: In collaboration with Younseo Chang. Reconstructing 3D shape from a single image of a speckle pattern.
+summary: Reconstructing 3D shape from a single image of a speckle pattern. In collaboration with Younseo Chang.
 weight: 4
 ---
 
