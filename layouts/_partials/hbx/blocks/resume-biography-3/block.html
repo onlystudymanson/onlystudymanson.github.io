@@ -351,7 +351,7 @@
         {{ with $bio_content }}
         <div class="mb-0">
           <div class="prose prose-lg dark:prose-invert text-gray-800 dark:text-gray-200 text-base sm:text-lg leading-relaxed">
-            <div class="bio-text" {{ if $bio_style }}{{ (printf "style=\"%s\"" $bio_style) | safeHTMLAttr }}{{ end }}>
+            <div class="bio-text [&>:last-child]:mb-0 [&>:last-child>:last-child]:mb-0" {{ if $bio_style }}{{ (printf "style=\"%s\"" $bio_style) | safeHTMLAttr }}{{ end }}>
               {{ . }}
             </div>
           </div>
