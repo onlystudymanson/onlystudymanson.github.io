@@ -5,3 +5,5 @@ weight: 4
 ---
 
 This project explores how a speckle pattern captured in a single image can be used to reconstruct 3D shape.
+
+In collaboration with Younseo Chang.
